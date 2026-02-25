@@ -6,7 +6,6 @@ $padding: 10px;
 $gapAtRow: $gap * 6;
 $widthCount: $width + $gap;
 
-
 * {
   box-sizing: border-box;
 }
@@ -48,6 +47,7 @@ body {
       display: none;
     }
   }
+
   &__day {
     background-color: #eee;
     border: 1px solid black;
@@ -66,8 +66,6 @@ body {
       height: $height;
       font-family: Arial, sans-serif;
       font-size: 30px;
-      width: 100%;
-      text-align: center;
     }
 
     @for $i from 1 through 31 {
