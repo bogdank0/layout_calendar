@@ -23,7 +23,8 @@ body {
   gap: $gap;
   flex-wrap: wrap;
 
-  max-width: ($width * $row + $gap * ($row - 1) + $padding * 2);
+  max-width: ($width * $row) + ($gap * ($row - 1)) + ($padding * 2);
+  padding: 0 $padding;
 
   $start-days: (
     mon: 0,
@@ -64,6 +65,8 @@ body {
       height: $height;
       font-family: Arial, sans-serif;
       font-size: 30px;
+      width: 100%;
+      text-align: center;
     }
 
     @for $i from 1 through 31 {
